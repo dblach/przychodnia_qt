@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uploader</class>
+ <widget class="QDialog" name="uploader">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>150</width>
+    <height>53</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Operacja w toku</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Trwa przesyłanie...</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

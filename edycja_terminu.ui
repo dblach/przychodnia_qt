@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edycja_terminu</class>
+ <widget class="QDialog" name="edycja_terminu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>201</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>391</width>
+     <height>154</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="id">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Lekarz</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="lekarz"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Dzień</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="dzien"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Poradnia</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="poradnia"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Godziny</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTimeEdit" name="gp"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>-</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTimeEdit" name="gk"/>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Pomieszczenie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="pomieszczenie"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnOk">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>170</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAnuluj">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>170</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Anuluj</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnUsun">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>170</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Usuń</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

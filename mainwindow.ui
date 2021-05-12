@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>190</width>
+    <height>317</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PrzychodniaQt</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="Ustawienia">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>260</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/icon/icons/settings.png</normaloff>:/icon/icons/settings.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lZalogowany">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Niezalogowany</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tTab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>171</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Administrator</string>
+     </attribute>
+     <widget class="QPushButton" name="btnLekarze">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lekarze</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icons.qrc">
+        <normaloff>:/icon/icons/doctor.png</normaloff>:/icon/icons/doctor.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPacjenci">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pacjenci</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icons.qrc">
+        <normaloff>:/icon/icons/patient.png</normaloff>:/icon/icons/patient.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPoradnie">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Poradnie</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icons.qrc">
+        <normaloff>:/icon/icons/checklist.png</normaloff>:/icon/icons/checklist.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAplikacja">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aplikacja</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icons.qrc">
+        <normaloff>:/icon/icons/app.png</normaloff>:/icon/icons/app.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAdministratorzy">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Administratorzy</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icons.qrc">
+        <normaloff>:/icon/icons/admin.png</normaloff>:/icon/icons/admin.png</iconset>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Lekarz</string>
+     </attribute>
+     <widget class="QPushButton" name="btnMojeWizyty">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Moje wizyty</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icons.qrc">
+        <normaloff>:/icon/icons/checklist.png</normaloff>:/icon/icons/checklist.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMoiPacjenci">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Moi pacjenci</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icons.qrc">
+        <normaloff>:/icon/icons/doctor.png</normaloff>:/icon/icons/doctor.png</iconset>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>190</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

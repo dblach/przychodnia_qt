@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icons/doctor.png</file>
+        <file>icons/patient.png</file>
+        <file>icons/settings.png</file>
+        <file>icons/add.png</file>
+        <file>icons/checklist.png</file>
+        <file>icons/photo.png</file>
+        <file>icons/app.png</file>
+        <file>icons/admin.png</file>
+    </qresource>
+</RCC>

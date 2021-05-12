@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>administratorzy</class>
+ <widget class="QWidget" name="administratorzy">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>282</width>
+    <height>258</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Administratorzy</string>
+  </property>
+  <widget class="QTableWidget" name="tAdministratorzy">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>261</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="showGrid">
+    <bool>true</bool>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>30</number>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>100</number>
+   </attribute>
+   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>21</number>
+   </attribute>
+   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QPushButton" name="btnDodaj">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>230</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dodaj</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/icons/add.png</normaloff>:/icon/icons/add.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

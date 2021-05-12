@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>moje_wizyty</class>
+ <widget class="QWidget" name="moje_wizyty">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>807</width>
+    <height>382</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Moje wizyty</string>
+  </property>
+  <widget class="QPushButton" name="btnPoprzedni">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt; Poprzedni</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnData">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>351</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tWizyty">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>791</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="rowCount">
+    <number>2</number>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>15</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>20</number>
+   </attribute>
+   <row/>
+   <row/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QPushButton" name="btnNastepny">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Następny &gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOdswiez">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Odśwież</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

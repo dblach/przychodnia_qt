@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>poradnie</class>
+ <widget class="QWidget" name="poradnie">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Poradnie</string>
+  </property>
+  <widget class="QTableWidget" name="tPoradnie">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>18</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>21</number>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="btnDodaj">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dodaj</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/icons/add.png</normaloff>:/icon/icons/add.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

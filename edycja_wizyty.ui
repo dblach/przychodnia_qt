@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edycja_wizyty</class>
+ <widget class="QDialog" name="edycja_wizyty">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>447</width>
+    <height>306</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Edycja wizyty</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>431</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Lekarz</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lekarz">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Pacjent</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="pacjent">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Data</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDateEdit" name="data">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Godziny</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTimeEdit" name="godzina_rozpoczecia">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>                   - </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTimeEdit" name="godzina_zakonczenia">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Notatka</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QTextEdit" name="notatka"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnAnuluj">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Anuluj</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOdwolaj">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Odwołaj</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOk">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

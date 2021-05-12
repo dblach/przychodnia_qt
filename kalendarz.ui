@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>kalendarz</class>
+ <widget class="QDialog" name="kalendarz">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>319</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Wybierz datę</string>
+  </property>
+  <widget class="QCalendarWidget" name="cal">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>301</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOk">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>220</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAnuluj">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>220</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Anuluj</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

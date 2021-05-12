@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edycja_lekarza</class>
+ <widget class="QDialog" name="edycja_lekarza">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>871</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Edycja danych lekarza</string>
+  </property>
+  <widget class="QPushButton" name="btnZapisz">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>460</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zapisz</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnUsun">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>460</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Usuń</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAnuluj">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>460</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Anuluj</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnZmienZdjecie">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>460</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zmień zdjęcie</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>871</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Dane</string>
+    </attribute>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>851</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="id">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Imię</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="imie"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Nazwisko</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="nazwisko"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Login</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="login">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Hasło</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="haslo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Specjalizacja</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="specjalizacja"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> Zdjęcie</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="zdjecie">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>180</y>
+       <width>782</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Brak</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Godziny przyjęć</string>
+    </attribute>
+    <widget class="QTableWidget" name="tGodzinyPrzyjec">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>861</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnDodajTermin">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>460</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dodaj termin</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
