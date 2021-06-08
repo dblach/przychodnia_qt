@@ -64,11 +64,10 @@ void edycja_aktualnosci::on_btnZapisz_clicked(){
             }
         }
         QSqlQuery q;
-        QString qr=id?
-            "update wiadomosci set nazwa='"+ui->tytul->text()+"',obraz='"+zdj+"',tresc='"+ui->tresc->toPlainText().replace("'","\\""")+"' where id="+QString::number(id)
-           :"insert into wiadomosci(id,nazwa,tresc,obraz) values('','"+ui->tytul->text()+"','"+ui->tresc->toPlainText().replace("'","\\""")+"','"+zdj+"')";
-        qDebug()<<qr;
-        q.exec(qr);
+        q.exec(id?
+                   "update wiadomosci set nazwa='"+ui->tytul->text()+"',obraz='"+zdj+"',tresc='"+ui->tresc->toPlainText().replace("'","\\""")+"' where id="+QString::number(id)
+                  :"insert into wiadomosci(id,nazwa,tresc,obraz) values('','"+ui->tytul->text()+"','"+ui->tresc->toPlainText().replace("'","\\""")+"','"+zdj+"')"
+        );
         if(q.numRowsAffected()==1) this->accept();
         else
             QMessageBox::information(this,ERROR,ERROR_CANNOT_UPDATE,QMessageBox::Ok);

@@ -38,6 +38,10 @@
    <property name="text">
     <string>Nowy</string>
    </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/icons/add.png</normaloff>:/icon/icons/add.png</iconset>
+   </property>
   </widget>
   <widget class="QLineEdit" name="filtr">
    <property name="geometry">
@@ -130,6 +134,8 @@
    <column/>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

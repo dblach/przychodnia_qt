@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.2, 2021-05-12T21:48:00. -->
+<!-- Written by QtCreator 4.13.2, 2021-06-02T23:41:38. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -324,10 +324,11 @@
     </valuelist>
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
-    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">przychodnia_qt2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/ja/Desktop/przychodnia_qt_repo/przychodnia_qt/przychodnia_qt.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/ja/Desktop/przychodnia_qt_repo/przychodnia_qt/przychodnia_qt.pro</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes">
+     <value type="QString">QT_DEBUG_PLUGINS=1</value>
+    </valuelist>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/ja/Desktop/przychodnia_qt/przychodnia_qt/przychodnia_qt.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/ja/Desktop/przychodnia_qt/przychodnia_qt/przychodnia_qt.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>

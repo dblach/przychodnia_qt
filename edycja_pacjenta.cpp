@@ -11,8 +11,10 @@
 
 edycja_pacjenta::edycja_pacjenta(QWidget *parent,int id,bool allow_editing):QDialog(parent),ui(new Ui::edycja_pacjenta){
     ui->setupUi(this);
+    this->id=id;
     if(!id){
         ui->btnUsun->setEnabled(0);
+        ui->tabWidget->removeTab(1);
     }
     else{
         ui->login->setEnabled(0);
@@ -29,7 +31,7 @@ edycja_pacjenta::edycja_pacjenta(QWidget *parent,int id,bool allow_editing):QDia
         ui->btnUsun->setEnabled(0);
         ui->tabWidget->setTabVisible(1,0);
     }
-    zmien_tydzien(0);
+    if(id) zmien_tydzien(0);
 }
 
 edycja_pacjenta::~edycja_pacjenta(){
@@ -56,6 +58,7 @@ void edycja_pacjenta::on_btnZapisz_clicked(){
         ui->imie->text()==""
      || ui->nazwisko->text()==""
      || ui->login->text()==""
+     || (!id&&ui->haslo->text()=="")
     ){
         QMessageBox::critical(this,ERROR,ENTER_DATA,QMessageBox::Ok);
         return;

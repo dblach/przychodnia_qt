@@ -31,7 +31,7 @@ void lekarze::setupWgNazwisk(){
     ui->tWgNazwisk_table->setRowCount(0);
 
     QSqlQuery q;
-    q.exec("select id,nazwisko,imie from lekarze");
+    q.exec("select id,nazwisko,imie from lekarze order by nazwisko");
     while(q.next()){
         int r=ui->tWgNazwisk_table->rowCount();
         ui->tWgNazwisk_table->insertRow(r);

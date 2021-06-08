@@ -42,7 +42,7 @@ void edycja_poradni::on_btnZmienZdjecie_clicked(){
     zdj_n=QFileDialog::getOpenFileName(this,IMAGE_DIALOG_TITLE,".",IMAGE_DIALOG_FILEMASK);
     if(zdj_n=="") return;
     QPixmap p(zdj_n);
-    ui->zdjecie->setPixmap(zdj_n);
+    ui->zdjecie->setPixmap(p.scaled(ui->zdjecie->size(),Qt::KeepAspectRatio,Qt::SmoothTransformation));
     zdj_zmienione=true;
 }
 

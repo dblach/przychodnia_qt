@@ -28,7 +28,7 @@ uploader::uploader(QWidget *parent,QString file,QString name_old,QString folder)
 
     QNetworkRequest rq(url);
     QNetworkAccessManager *nm=new QNetworkAccessManager(this);
-    connect(nm,SIGNAL(finished(QNetworkReply*)),this,SLOT(onReply(QNetworkReply*))) ;
+    connect(nm,SIGNAL(finished(QNetworkReply*)),this,SLOT(onReply(QNetworkReply*)));
     QNetworkReply *r=nm->post(rq,mp);
     mp->setParent(r);
 }

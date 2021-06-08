@@ -36,6 +36,7 @@ private:
     QStringList l;
     QSettings st;
     QString df="dd.MM.yyyy";
+    int id;
 };
 
 #endif // EDYCJA_PACJENTA_H

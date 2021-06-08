@@ -72,6 +72,7 @@ void edycja_lekarza::on_btnZapisz_clicked(){
         ui->imie->text()==""
      || ui->nazwisko->text()==""
      || ui->login->text()==""
+     || (!idl&&ui->haslo->text()=="")
     ){
         QMessageBox::critical(this,ERROR,ENTER_DATA,QMessageBox::Ok);
         return;

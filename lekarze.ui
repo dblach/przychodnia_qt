@@ -144,6 +144,10 @@
         <property name="text">
          <string>Nowy</string>
         </property>
+        <property name="icon">
+         <iconset resource="icons.qrc">
+          <normaloff>:/icon/icons/add.png</normaloff>:/icon/icons/add.png</iconset>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="tWgGodzinPrzyjec">
@@ -255,6 +259,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
